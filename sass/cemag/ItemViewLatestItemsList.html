@@ -1,0 +1,41 @@
+<table>
+{% for $_item in GetItemViewLatestItemsList() %}{% MapTemplateVars($_item) %}{% if($RowCount == 1 || ($RowCount-1)%$ItemViewLatestItemsList_EachRow == 0) %}
+<tr>
+{% endif %}
+<td>
+<div class="boxMC">
+			<div class="headerMC">
+				<h3>NEUHEIT</h3>  
+			</div>
+			<div class="contentMC">
+<table border="0" cellspacing="0" cellpadding="1" width="156">
+					<tr>
+						<td colspan="2" style="padding-bottom:5px; text-align:center">
+							<b>$Name[1]</b> 
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><a class="prod_link" href="{% Link_Item($ID) %}">$PreviewImage[1]</a></td>
+					</tr>
+					<tr>
+						<td height="5"></td>
+						<td class="PriceMC" align="right" height="5">
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"><br><a class="prod_link" href="{% Link_Item($ID) %}">weiter &raquo;</a><br><br></td>
+						<td class="PriceMC" align="right" valign="top"><br>
+							&euro; $Price
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="footerMC">
+			</div>
+		</div>
+</td>
+{% if($LoopIsLast[1] || $RowCount%$ItemViewLatestItemsList_EachRow == 0) %}
+
+</tr>
+{% endif %}{% endfor %}
+</table>

@@ -1,0 +1,377 @@
+<!--[if lt IE 7 ]><script type="text/javascript">document.body.className += ' ie ltie7 lteie7 lteie8';</script><![endif]-->
+<!--[if IE 7 ]><script type="text/javascript">document.body.className += ' ie ie7 lteie7 lteie8';</script><![endif]-->
+<!--[if IE 8 ]><script type="text/javascript">document.body.className += ' ie ie8 lteie8';</script><![endif]-->
+<!--[if IE 9 ]><script type="text/javascript">document.body.className += ' ie ie9 gteie9';</script><![endif]-->
+<!--[if IE 10 ]><script type="text/javascript">document.body.className += ' ie ie10 gtie9 gteie10';</script><![endif]-->
+<!--[if IE 11 ]><script type="text/javascript">document.body.className += ' ie ie11 lteie9 gtie9 gtie10 gteie11';</script><![endif]-->
+<!--[if gt IE 10 ]><script type="text/javascript">document.body.className += ' ie gtie10 gteie10';</script><![endif]-->
+<!--[if !IE]><!-->
+<script type="text/javascript">document.body.className += ' noie';</script>
+<!--<![endif]-->
+<script type="text/javascript">document.body.className += ' js';</script>
+
+
+
+<div class="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-xs-12 pull-right">
+				<ul class="nav navTop">
+					<li><a href="{% Link_MyAccount() %}">MY ACCOUNT</a></li>
+					<li><a href="{% Link_ItemWishlist() %}">MY WISHLIST</a></li>
+					<li><a href="{% Link_Basket() %}">MY CART</a></li>
+					<li><a href="checkout.html">CHECKOUT</a></li>
+					<li><a href="logIn.html">LOG IN</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col-xs-10">
+				<!--<img src="logo.png">-->
+				<h1 class="logo">MALT INT</h1>
+			</div>
+			<div class="col-xs-2">
+				<a class="search" href=""><img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/search.png"></a>
+				<a class="cartIcon" href="{% Link_Basket() %}"><img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png"></a>
+			</div>
+		</div>
+		<div class="row">
+			<nav class="col-xs-12">
+				<div class="border">
+				<ul class="nav navUnder">
+					<li><a href="{% Link_Home() %}">HOME</a></li>
+					{% Container_NavigationCategories() %}
+				</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row sliderWrapper">
+			<img class="slider"src="http://www.cemag-logistics.de/images/gallery/content/furniture.jpg">
+			$FreeVar[1]
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="newProductWrapper col-xs-12">
+				<h2>NEW PRODUCT</h2><!--CHOSEN CATEGORY HERE -->
+			</div>
+		</div>
+		<div class="row productChoicesWrapper">
+			<div class="col-xs-12 choices">
+				$MainFrame
+			</div>
+		</div>
+		<div class="row productWrappers">
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img src="expand.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img src="expand.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row productWrappers">
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img src="expand.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img src="expand.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="productsWrapper">
+					<img class="item" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					<div class="addons">
+						<div class="new">New</div>
+						<div class="discount">-15%</div>
+					</div>
+					<h3 class="itemName">BURO STUHL VITRA SPECIAL EDITION</h3>
+					<div class="price">
+						<span class="priceStrike">$16.51</span>
+						<span class="priceActual">$14.03</span>
+					</div>
+					<img class="rating" src="rating.png">
+					<div class="cart">
+						<img class="icon" src="http://www.cemag-logistics.de/images/gallery/content/cart.png">
+					</div>
+					<div class="like">
+						<img src="like.png">
+					</div>
+					<div class="expand">
+						<img src="expand.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="viewMore">
+					<img src="arrow.png">
+					<p>VIEW MORE ITEMS</p>
+				</div>
+			</div>
+		</div>
+	</div>
+			<!-- waterfall scrolling -->
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="blogWrapper col-xs-12">
+				<h2>LATEST BLOGS</h2>
+			</div>
+		</div>
+		<div class="row postWrapper">
+			<div class="col-xs-12 col-md-3">
+				<img class="post" src="http://www.cemag-logistics.de/images/gallery/content/furniture.jpg">
+				<h3 class="postName">Phaselleus viverra nulls ut</h3>
+				<imgsrc="calendarIcon.png"><span>16 Dec 2015</span>
+				<p class="postText">Curabicur surpis. Praesent biandit liabereet nibh. Marbi vestibulum..<p> 
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<img class="post" src="http://www.cemag-logistics.de/images/gallery/content/furniture.jpg">
+				<h3 class="postName">Phaselleus viverra nulls ut</h3>
+				<imgsrc="calendarIcon.png"><span>16 Dec 2015</span>
+				<p class="postText">Curabicur surpis. Praesent biandit liabereet nibh. Marbi vestibulum..<p> 
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<img class="post" src="http://www.cemag-logistics.de/images/gallery/content/furniture.jpg">
+				<h3 class="postName">Phaselleus viverra nulls ut</h3>
+				<imgsrc="calendarIcon.png"><span>16 Dec 2015</span>
+				<p class="postText">Curabicur surpis. Praesent biandit liabereet nibh. Marbi vestibulum..<p>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<img class="post" src="http://www.cemag-logistics.de/images/gallery/content/furniture.jpg">
+				<h3 class="postName">Phaselleus viverra nulls ut</h3>
+				<imgsrc="calendarIcon.png"><span>16 Dec 2015</span>
+				<p class="postText">Curabicur surpis. Praesent biandit liabereet nibh. Marbi vestibulum..<p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="brandsWrapper col-xs-12">
+				<h2>OUR BRANDS</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="brands"><!--CHANGES BELOW-->
+					<li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li>
+					<li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li><li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li><li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li><li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li><li>
+						<img class="chair" src="http://www.cemag-logistics.de/images/gallery/content/chair.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container footer">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3 newslettersWrapper">
+				<h3>NEWSLETTERS</h3>
+				<p>Subscripe to our newsletter to receive news, updates, freestuff and new releases by email</p>
+				<input type="text" id="newsletter" placeholder="Enter your e-mail"></input>
+				<button class="submitButton" type="submit">SUBSCRIBE</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 mapWrapper">
+				<div id="map-canvas"></div>
+			</div>
+			<div class="col-xs-12 col-sm-3 contactWrapper">
+				<h3>CONTACT US</h3>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<ul class="contact">
+					<li><img class="contactIcon" src="http://www.cemag-logistics.de/images/gallery/content/homeIcon.png">1600 Pennysylvania Avenue NW, Washington, D.C.</li>
+					<li><img class="contactIcon" src="http://www.cemag-logistics.de/images/gallery/content/telephoneIcon.png">+04.123.456.789</li>
+					<li><img class="contactIcon" src="http://www.cemag-logistics.de/images/gallery/content/faxIcon.png">+04.123.456.789</li>
+					<li><img class="contactIcon" src="http://www.cemag-logistics.de/images/gallery/content/emailIcon.png">contacts@cemag-logistics.de</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="row">
+			<div class="col-xs-12 col-md-4">
+				<!--<img src="logo.png">--><h3>MALT INC</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<hr>
+				<ul class="socialIcons">
+					<li class="socialIcon"><a href="facebookLink"><img src="facebook.png"></a></li>
+					<li class="socialIcon"><a href="twitterLink"><img src="twitter.png"></a></li>
+					<li class="socialIcon"><a href="pinterestLink"><img src="pinterest.png"></a></li>
+					<li class="socialIcon"><a href="googleLink"><img src="google.png"></a></li>
+					<li class="socialIcon"><a href="instagramLink"><img src="instagram.png"></a></li>
+					<li class="socialIcon"><a href="RSSLink"><img src="RSS.png"></a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-8 mapSite">
+				<ul class="siteMap">
+					<li class="main"><span class="info">SHIPPING INFO</span>
+						<ul class="subCats">
+							<li>New Collection</li>
+							<li>Best Sellers</li>
+							<li>Manufacturers</li>
+							<li>Suppliers</li>
+							<li>Specials</li>
+							<li>Delivery and Returns</li>
+						</ul>
+					</li>
+					<li class="main"><span class="info">SHIPPING INFO</span>
+						<ul class="subCats">
+							<li>New Collection</li>
+							<li>Best Sellers</li>
+							<li>Manufacturers</li>
+							<li>Suppliers</li>
+							<li>Specials</li>
+							<li>Delivery and Returns</li>
+						</ul>
+					</li>
+					<li class="main"><span class="info">INFORMATION</span>
+						<ul class="subCats">
+							<li>Recalls</li>
+							<li>My Account</li>
+							<li>Orders and Returns</li>
+							<li>Site Map</li>
+							<li>Search Terms</li>
+							<li>Advanced Search</li>
+						</ul>
+					</li>
+					<li class="main"><span class="info">INFORMATION</span>
+						<ul class="subCats">
+							<li>Recalls</li>
+							<li>My Account</li>
+							<li>Orders and Returns</li>
+							<li>Site Map</li>
+							<li>Search Terms</li>
+							<li>Advanced Search</li>
+						</ul>
+					</li>
+				</ul>
+				<hr>
+				<p>Copyright Information: this site made by ColorTwister</p>
+				<ul class="paymentForms">
+					<li class="payIcon"><img class="payIcon" src="payPalIcon.png"></li>
+					<li class="payIcon"><img class="payIcon" src="discoverIcon.png"></li>
+					<li class="payIcon"><img class="payIcon" src="cirrusIcon.png"></li>
+					<li class="payIcon"><img class="payIcon" src="visaIcon.png"></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</div>

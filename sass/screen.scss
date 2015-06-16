@@ -1,0 +1,487 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html{
+  height:100% !important;
+}
+
+body{
+	font-family: "Bree Serif";
+	padding-top:70px;
+  z-index:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-image: url("../images/background.png");
+  @include background-size(cover);
+  overflow-y:auto;
+
+}
+
+.container{
+  max-width:1140px;
+}
+
+.content-wrapper{
+  min-height: 100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto -50px;
+}
+
+.content-wrapper:after {
+  content: "";
+  display: block;
+}
+
+.nav-styles{
+  position:absolute;
+  top:0;
+  width:100% !important;
+}
+
+nav{
+  margin:0 auto;
+  max-width:1140px;
+  z-index:100;
+}
+
+.nav-styles{
+  width:1120px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	display:inline-block;
+	font-weight:700;
+  color:#000000;
+	font-size: 0.8em;
+}
+
+.navbar-default {
+	border: none;
+  border-radius: 0; 
+  overflow:visible;  
+  background-color:rgba(255,255,255,0);
+  box-shadow:none;
+  background-image:none !important;
+}
+
+.navigation{
+  height:75px;
+}
+
+.menuTop{
+  /*background-color:rgba(255,255,255,0.8);*/
+  font-size:0.9em;
+  z-index:100;
+}
+
+.dropdown-backdrop{
+  z-index:100;
+}
+
+/*SEARCH BAR -----------*/
+#search-form { display: none; }
+
+
+
+.promo{
+	position:absolute;
+	right:0;
+  top:15%;
+	width:300px;
+}
+
+.welcomed{
+  margin:5% auto;
+}
+
+.info{
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	position: relative;
+  text-align:left;
+  left:-20%;
+  padding:2%;
+    h1{
+    	font-size:1.2em;
+    	font-weight:bold;
+    	padding:5% 0;
+      line-height: 1.3em;
+    }
+    p{
+    	font-size:0.9em;
+      line-height:1.2em;
+    }
+	@mixin clearfix {
+  		overflow: hidden;
+  		@include has-layout;
+  	}
+
+
+}
+
+.whiteText{
+  opacity:1;
+}
+
+.push{
+  clear:both;
+}
+
+footer{
+  height:50px;
+  display:block;
+  background-color:black;
+  color:white;
+  font-size:0.8em;
+  max-width:1140px;
+  width:100%;
+  opacity:0.6;
+  margin:0 auto;
+  clear:both;
+  div{
+    margin-top:2.5px;
+  }
+  .copyright{
+    position:relative;
+    top:10px;
+  }
+}
+
+
+
+
+/*=======FARHSCHULE PAGE =======*/
+
+.topInfo{
+  padding-top:5%;
+}
+
+.words{
+  text-align:left;
+  padding:2%;
+    h1{
+      font-size:1.2em;
+      font-weight:bold;
+      padding:5% 0;
+      line-height: 1.3em;
+    }
+    p{
+      font-size:0.9em;
+      line-height:1.2em;
+    }
+}
+
+.grayBoxes{
+  padding-top:5%;
+}
+
+.gray{
+  height:200px;
+  width:auto;
+  background-color:gray;
+  display:block;
+  margin:2%;
+}
+
+.df{
+  padding-top:5%;
+}
+
+.content-title{
+  text-align:center;
+  padding:5% 0;
+}
+
+.title{
+  font-size:1.5em;
+  padding:3% 0;
+}
+
+.smallGray{
+  height:200px;
+  background-color:gray;
+  margin:2% 0;
+}
+
+/*======ANMELDUNG=====*/
+
+.words-anmeldung{
+  padding-top:5%;
+  text-align:right;
+  padding:2%;
+    h1{
+      font-size:1.2em;
+      font-weight:bold;
+      padding:5% 0;
+      line-height: 1.3em;
+    }
+    p{
+      font-size:0.9em;
+      line-height:1.2em;
+    }
+}
+
+.specialOffer{
+  background-color:gray;
+  height:120px;
+  width:auto;
+  margin:5% 0;
+}
+
+.pedir input, .pedir select{
+  background-color:#fff;
+  border:1px solid #ddd;
+}
+
+.labelers{
+  text-align:right;
+}
+
+.inputers{
+  text-align:left;
+  position:relative;
+  bottom:2px;
+}
+
+.form-group{
+  padding:2% 0;
+  height:50px;
+}
+
+
+/*========PREISE =======*/
+
+
+table{
+  border:3px solid black;
+  margin:5% 0;
+  line-height:3em;
+  background-color:white;
+}
+
+tr{
+  border-bottom:2px dotted black;
+}
+
+.name{
+  padding-left:2%;
+}
+
+.basic{
+  background-color: #cccccc;
+  text-align:center;
+}
+
+.club{
+  text-align:center;
+}
+
+.pro{
+  background-color:#cccccc;
+  text-align:center;
+}
+
+.paket-box{
+  background-color:#8f8f8f;
+  height:100px;
+  color:white;
+  text-align:center;
+  font-size:2em;
+  h3{
+    @include vertical-align;
+  }
+}
+
+.kurse{
+  margin:5% auto 10% auto;
+}
+
+
+
+/*========KONTAKT=======*/
+
+#map-canvas{
+  border:2px solid black;
+}
+
+#kontakt-label{
+  text-align:left;
+  margin-top:5%;
+  margin-bottom:2%;
+}
+
+.kontakt-formular{
+  font-size:2em;
+}
+
+.kontakt{
+  text-align:left;
+  input{
+    width:100%;
+    margin:5% 0;
+  }
+}
+
+#concerns{
+  margin: 4.5% auto;
+  width: 100%;
+  height: 282px;
+  border: 1px solid gray;
+  border-radius: 0;
+}
+
+.bizfo{
+  margin:5% auto;
+  div{
+    text-align:left;
+    line-height:1.5em;
+    h3{
+      font-size:1.5em;
+    }
+  }
+}
+
+.address{
+  display:block;
+  text-align:right;
+}
+
+
+
+
+/* MEDIA QUERIES------*/
+
+@media screen and (max-width: 411px) {
+
+  html{
+    margin: 0 15px;
+  }
+
+  body{
+    background-position:center center;
+  }
+
+  nav{
+    margin:0 15px;
+  }
+
+  .logo{
+    position:relative;
+    top:-50px;
+    height:auto;
+    width:80%;
+  } 
+
+  .welcome{
+    margin-bottom:10%;
+  }
+
+  .info{
+    width:100%;
+    left:0;
+    h1{
+      font-size:2em;
+    }
+    p{
+      font-size:1em;
+      line-height:1.2em;
+    }
+  }
+
+  .kurse{
+    margin-bottom:20%;
+  }
+
+
+  .df{
+    margin-bottom:15%;
+  }
+
+  footer{
+    bottom:0;
+    .copyright{
+      top:0;
+    }
+  }
+
+/*----ANMELDE ----*/
+  .pedir input, .pedir select{
+    width:100%;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .menuTop{
+    background-color:rgba(255,255,255,0.7);
+  }
+  }
+
+@media screen and (min-width:412px) and (max-width: 991px) {
+  .info{
+    margin-bottom:20%;
+    p{
+      font-size:1em;
+      line-height:1.2em;
+    }
+  }
+  body{
+    background-position:center center;
+  }
+
+  .info{
+    left:0;
+    width:100%;
+  }
+
+  .kurse{
+    margin-bottom:20%;
+  }
+
+  .df{
+    margin-bottom:15%;
+  }
+
+  .push{
+    height:50px;
+  }
+
+  footer{
+    bottom:0;
+  }
+
+/*----ANMELDE ----*/
+  .pedir input, .pedir select{
+    width:100%;
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .pedir input, .pedir select{
+    width:100%;
+  }
+}
+
+@media screen and (min-width:412px) and (max-width: 1199px){
+  .push{
+    height:50px;
+  }
+}
+

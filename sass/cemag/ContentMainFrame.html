@@ -1,0 +1,195 @@
+<div class="main">
+	<!--header -->
+	<div id="header">
+    	<div class="logo">
+    
+
+<div class="menupos"><div class="topmenu"><ul><li><a href="{% Link_Home() %}">Home</a></li><li><a href="{% Link(9) %}">Kontakt</a></li><li><a href="{% Link_Basket() %}">Warenkorb</a></li><li><a 
+
+href="{% Link_MyAccount() %}">Mein Konto</a></li></ul></div> </div>    
+        </div>
+
+	
+	
+	<div class="obenrechts">		
+			<div class="suchbox">	
+		$FormOpenSearch
+<input name="Params[SearchParam]" style="height:16px; width:135px;border:0px" type="text">			
+<input src="/layout/ac_008/go-such.png" title="suchen" alt="jetzt suchen" type="image" >	
+		$FormCloseSearch		
+					
+			</div>	
+	</div>
+
+      <div class="clear"></div>
+<div class="headerline"></div>
+    </div>
+	<!--header end-->
+</div>
+
+	<div class="main">
+        <!--content -->
+        <div class="content">
+         
+            
+                        <div class="column">
+						          <div class="column_l"><div class="box-top"><div class="titel">Kategorien</div></div>
+                           			                 <!--       <div class="box-ctop"><div class="titel">Kategorien</div></div>	 -->
+									<div class="box-nav">{% Container_NavigationCategories() %}</div>	
+									<div class="box-footer"></div>	
+
+																
+
+<!-- #########################################################  ANFANG Bezahlsystem	####################										
+									<div class="box-top"><div class="titel">Bezahlsysteme</div></div>
+									<img alt="zahlungsarten" src="/layout/ac_008/zahlungsarten.gif">
+#########################################################  ENDE Bezahlsystem	#####################	-->
+										
+									
+						<div class="box-top">
+
+									<div class="titel">Info-Menu</div></div>
+                           			                        <div class="box-body">
+<ul>
+<li><a href="{% Link_Home() %}">Home</a></li><li>
+<a href="{% Link(10) %}">Datenschutz</a></li><li>
+<a href="{% Link(3) %}">Widerrufsrecht</a></li><li>
+<a href="{% Link(8) %}">Versand</a></li><li>
+<a href="{% Link(4) %}">AGB</a></li><li>
+<a href="{% Link(5) %}">Impressum</a></li><li>
+<a href="{% Link_Watchlist() %}">Merkliste</a></li><li>
+<a href="{% Link_ItemWishlist() %}">Wunschliste</a></li>
+</ul>
+                                                                        </div>	
+									<div class="box-footer"></div>	
+
+
+
+<!--	##########################################################  ANFANG HOTLINE	#####################		
+									<div class="hotline">
+									<div class="titel">Unsere Hotline</div>
+									<div class="beschreibung" style="padding:5px 10px 10px 40px;"><img alt=""style="float:left;" src="/layout/ac_008/cartsymbol.gif">Sie haben eine 
+
+Frage? Wir freuen uns auf Ihren Anruf<br><br>Tel: <strong>04941-123456</strong><br><br>F&uuml;r Ihre Bestellung und Support sind wir von von 11 bis 16 Uhr erreichbar.<br><br><hr style="border:solid #C5C5C5 
+
+1px;height:1px;">
+</div>
+									</div>	
+##########################################################  ENDE HOTLINE	#####################		-->
+<!--	##########################################################  ANFANG Versandkosten	#####################
+										<div class="dhl">
+									<div class="titel">Versandkosten</div>
+									<div class="beschreibung" style="padding:35px 10px 10px 40px;">Ab einem Warenwert von <strong>xx</strong> Euro versenden wir die Ware 
+
+kostenlos zu Ihnen!</div>
+									</div>	
+										
+#########################################################  ENDE Versandkosten	#####################	-->			
+                        			</div>		
+                         	<div class="column_m">$MainFrame</div>	 
+                        	<div class="column_r">
+                        	
+<!--	#########################################################  ANFANG - WUNSCHLISTE	#####################
+									<div class="wunschliste"><a href="{% Link_ItemWishlist() %}"><img src="/layout/ac_008/go-such.png" alt="zur Kasse" width="180" height="25"></a></div>
+#########################################################  ENDE WUNSCHLISTE	#####################	-->
+
+<!--	#########################################################  ANFANG - TOP ARTIKEL	#####################	-->
+									<div class="Tbox-top" style="position:relative;z-index:3;"><div class="title" style="position:relative;z-index:3;padding-top:12px;margin-top:4px;">Top Angebot</div></div>	
+									<div class="Tbox-body" style="position:relative;z-index:1;"><br>
+									<div> 
+									{% Container_ItemViewTopSellersList() %}
+									</div>
+									</div>	
+									<div class="Tbox-footer"></div>
+<!--	#########################################################  ENDE TOP ARTIKEL		#####################	-->
+	
+									<div class="box-top"><div class="title">Einkaufswagen</div></div>
+									<div class="cartdisplay"><a href="{% Link_Basket() %}">$BasketItemQuantity Artikel<br><br>
+									<br>$BasketTotalSeperatorComma &euro;</a></div>
+									<div class="box-footercart"><a href="{% Link_Basket() %}"><img src="/layout/ac_008/go-such.png" alt="zur Kasse" width="160" height="25"></a></div>
+
+
+									<div class="box-top"><div class="title" >Login</div></div>	
+									<div class="box-body" ><br>
+									
+<!--	##############################################  ANFANG - LOGin ####################
+									Zum Anmelden bitte Mailadresse und Passwort eingeben:<br><br>
+#########################################################  ENDE LOGin	#####################	-->
+
+<form action="index.php" method="post" enctype="multipart/form-data">
+<input type="hidden" name="ActionCall" value="WebActionOrderLogin" >
+<input type="hidden" name="AccountShowNext" value="MyAccount" >
+<input type="hidden" name="AccountShow" value="MyAccount" >
+[SID_FORM]
+<input class="formblanc" name="already_customer" value="1" type="hidden" >
+<span style="color:#fff;">E-Mail-Adresse:</span>
+<div id="inputfeldemail" style="background-image:url(/layout/ac_008/inputbox.gif);height:20px;width:145px;padding:3px 0 0 5px;"><input type="text" name="email" value="" style="height:14px; 
+
+width:140px;border:0;"></div>
+<span style="color:#fff;">Passwort:</span>
+<div id="inputfeldpasswort" style="background-image:url(/layout/ac_008/inputbox.gif);height:20px;width:145px;padding:3px 0 0 5px;"><input type="password" name="pwd" style="height:14px; width:140px;border:0;" 
+
+></div><br>
+<div id="inputbutton"><input src="/layout/ac_008/einloggen.gif" name="submit" value="LogIn"  alt="jetzt anmelden" type="image" ></div>
+</form>
+<br>Oder sind Sie<br><a href="{% Link_CustomerRegistration() %}">Neukunde?</a>
+									
+									</div>	
+									<div class="box-footer"></div>
+                           			
+									<div class="box-top"><div class="title">Newsletter</div></div>	
+									<div class="box-body"><br>
+									Bestens informiert mit unserem kostenlosen Newsletter.<br>
+<!--	##############################################  ANFANG - Newsletter ####################
+									<br><br>Jetzt gleich anmelden: <br>
+#########################################################  ENDE Newsletter	#####################	-->
+									<br>
+									<div >
+										<form action="/index.php#top" enctype="multipart/form-data" name="plenty_form" method="post"><input type="hidden" 
+
+name="ActionCall" value="WebActionSendCmsForm" >
+                                                                                <input name="FormID" value="-1" type="hidden"><input name="PContent" value="166" type="hidden">
+										<input type="hidden" name="EMailDirID" value="" >									
+										<div  style="background-image:url(/layout/ac_008/inputbox.gif);height:20px;width:145px;padding:3px 0 0 5px;"><input type="text" 
+
+name="FormFields[1]" style=" height:14px; width:140px;border:0px;" value="Ihr Name" ></div><br>
+									 	<div  style="background-image:url(/layout/ac_008/inputbox.gif);height:20px;width:145px;padding:3px 0 0 5px;"><input type="text" 
+
+name="FormFields[2]" style="height:14px; width:140px;border:0px;" value="Ihre eMailadresse" ></div> <br>
+										<input src="/layout/ac_008/anmelden.gif" title="anmelden" alt="jetzt anmelden" type="image" ></form>
+									</div>
+									</div>	
+									<div class="box-footer"></div>
+									
+									<div class="box-blanko">
+<!--	##############################################  ANFANG - FLAGGE ####################
+									  <div style="height:56px;">
+									    <div class="box-sprached"><a href="{% Link_Lang('de') %}"><img alt="deutsch" src="/layout/ac_008/sprachbtn.gif"></a></div>
+									    <div class="box-sprachee"><a href="{% Link_Lang('en') %}"><img alt="english" src="/layout/ac_008/sprachbtn.gif"></a></div>
+									  </div>
+#########################################################  ENDE FLAGGE	#####################	-->
+</div>								
+
+                        </div>		
+                   </div>
+                 </div>
+     
+        </div>
+
+
+<div class="clear"></div>
+
+
+<div class="foot-loop">
+<div class="main">
+	<!--footer -->
+	<div id="footer" style="text-align:right">
+	<br><br><br>
+	<span>Design and realize by <b><a href="http://www.cosmec.de/"><span style="color:#0000FF">cos</span><span style="color:#FF6600">m</span><span style="color:#0000FF">ec</span></a>&nbsp;&nbsp;&nbsp;</b></span>
+</div> 
+      
+        <div class="clear"></div>
+    </div>
+	<!--footer end-->	
+</div>	
+</div>

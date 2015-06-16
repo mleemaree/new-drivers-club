@@ -1,0 +1,602 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 18, ../sass/screen.scss */
+html {
+  height: 100% !important;
+}
+
+/* line 22, ../sass/screen.scss */
+body {
+  font-family: "Bree Serif";
+  padding-top: 70px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url("../images/background.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+/* line 35, ../sass/screen.scss */
+.container {
+  max-width: 1140px;
+}
+
+/* line 39, ../sass/screen.scss */
+.content-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+}
+
+/* line 46, ../sass/screen.scss */
+.content-wrapper:after {
+  content: "";
+  display: block;
+}
+
+/* line 51, ../sass/screen.scss */
+.nav-styles {
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+}
+
+/* line 57, ../sass/screen.scss */
+nav {
+  margin: 0 auto;
+  max-width: 1140px;
+  z-index: 100;
+}
+
+/* line 63, ../sass/screen.scss */
+.nav-styles {
+  width: 1120px;
+}
+
+/* line 67, ../sass/screen.scss */
+.navbar-default .navbar-nav > li > a {
+  display: inline-block;
+  font-weight: 700;
+  color: #000000;
+  font-size: 0.8em;
+}
+
+/* line 74, ../sass/screen.scss */
+.navbar-default {
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  background-image: none !important;
+}
+
+/* line 83, ../sass/screen.scss */
+.navigation {
+  height: 75px;
+}
+
+/* line 87, ../sass/screen.scss */
+.menuTop {
+  /*background-color:rgba(255,255,255,0.8);*/
+  font-size: 0.9em;
+  z-index: 100;
+}
+
+/* line 93, ../sass/screen.scss */
+.dropdown-backdrop {
+  z-index: 100;
+}
+
+/*SEARCH BAR -----------*/
+/* line 98, ../sass/screen.scss */
+#search-form {
+  display: none;
+}
+
+/* line 102, ../sass/screen.scss */
+.promo {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 300px;
+}
+
+/* line 109, ../sass/screen.scss */
+.welcomed {
+  margin: 5% auto;
+}
+
+/* line 113, ../sass/screen.scss */
+.info {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: relative;
+  text-align: left;
+  left: -20%;
+  padding: 2%;
+}
+/* line 120, ../sass/screen.scss */
+.info h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5% 0;
+  line-height: 1.3em;
+}
+/* line 126, ../sass/screen.scss */
+.info p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+/* line 138, ../sass/screen.scss */
+.whiteText {
+  opacity: 1;
+}
+
+/* line 142, ../sass/screen.scss */
+.push {
+  clear: both;
+}
+
+/* line 146, ../sass/screen.scss */
+footer {
+  height: 50px;
+  display: block;
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+  max-width: 1140px;
+  width: 100%;
+  opacity: 0.6;
+  margin: 0 auto;
+  clear: both;
+}
+/* line 157, ../sass/screen.scss */
+footer div {
+  margin-top: 2.5px;
+}
+/* line 160, ../sass/screen.scss */
+footer .copyright {
+  position: relative;
+  top: 10px;
+}
+
+/*=======FARHSCHULE PAGE =======*/
+/* line 171, ../sass/screen.scss */
+.topInfo {
+  padding-top: 5%;
+}
+
+/* line 175, ../sass/screen.scss */
+.words {
+  text-align: left;
+  padding: 2%;
+}
+/* line 178, ../sass/screen.scss */
+.words h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5% 0;
+  line-height: 1.3em;
+}
+/* line 184, ../sass/screen.scss */
+.words p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+/* line 190, ../sass/screen.scss */
+.grayBoxes {
+  padding-top: 5%;
+}
+
+/* line 194, ../sass/screen.scss */
+.gray {
+  height: 200px;
+  width: auto;
+  background-color: gray;
+  display: block;
+  margin: 2%;
+}
+
+/* line 202, ../sass/screen.scss */
+.df {
+  padding-top: 5%;
+}
+
+/* line 206, ../sass/screen.scss */
+.content-title {
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* line 211, ../sass/screen.scss */
+.title {
+  font-size: 1.5em;
+  padding: 3% 0;
+}
+
+/* line 216, ../sass/screen.scss */
+.smallGray {
+  height: 200px;
+  background-color: gray;
+  margin: 2% 0;
+}
+
+/*======ANMELDUNG=====*/
+/* line 224, ../sass/screen.scss */
+.words-anmeldung {
+  padding-top: 5%;
+  text-align: right;
+  padding: 2%;
+}
+/* line 228, ../sass/screen.scss */
+.words-anmeldung h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5% 0;
+  line-height: 1.3em;
+}
+/* line 234, ../sass/screen.scss */
+.words-anmeldung p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+/* line 240, ../sass/screen.scss */
+.specialOffer {
+  background-color: gray;
+  height: 120px;
+  width: auto;
+  margin: 5% 0;
+}
+
+/* line 247, ../sass/screen.scss */
+.pedir input, .pedir select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* line 252, ../sass/screen.scss */
+.labelers {
+  text-align: right;
+}
+
+/* line 256, ../sass/screen.scss */
+.inputers {
+  text-align: left;
+  position: relative;
+  bottom: 2px;
+}
+
+/* line 262, ../sass/screen.scss */
+.form-group {
+  padding: 2% 0;
+  height: 50px;
+}
+
+/*========PREISE =======*/
+/* line 271, ../sass/screen.scss */
+table {
+  border: 3px solid black;
+  margin: 5% 0;
+  line-height: 3em;
+  background-color: white;
+}
+
+/* line 278, ../sass/screen.scss */
+tr {
+  border-bottom: 2px dotted black;
+}
+
+/* line 282, ../sass/screen.scss */
+.name {
+  padding-left: 2%;
+}
+
+/* line 286, ../sass/screen.scss */
+.basic {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+/* line 291, ../sass/screen.scss */
+.club {
+  text-align: center;
+}
+
+/* line 295, ../sass/screen.scss */
+.pro {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+/* line 300, ../sass/screen.scss */
+.paket-box {
+  background-color: #8f8f8f;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+/* line 306, ../sass/screen.scss */
+.paket-box h3 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 311, ../sass/screen.scss */
+.kurse {
+  margin: 5% auto 10% auto;
+}
+
+/*========KONTAKT=======*/
+/* line 319, ../sass/screen.scss */
+#map-canvas {
+  border: 2px solid black;
+}
+
+/* line 323, ../sass/screen.scss */
+#kontakt-label {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+/* line 329, ../sass/screen.scss */
+.kontakt-formular {
+  font-size: 2em;
+}
+
+/* line 333, ../sass/screen.scss */
+.kontakt {
+  text-align: left;
+}
+/* line 335, ../sass/screen.scss */
+.kontakt input {
+  width: 100%;
+  margin: 5% 0;
+}
+
+/* line 341, ../sass/screen.scss */
+#concerns {
+  margin: 4.5% auto;
+  width: 100%;
+  height: 282px;
+  border: 1px solid gray;
+  border-radius: 0;
+}
+
+/* line 349, ../sass/screen.scss */
+.bizfo {
+  margin: 5% auto;
+}
+/* line 351, ../sass/screen.scss */
+.bizfo div {
+  text-align: left;
+  line-height: 1.5em;
+}
+/* line 354, ../sass/screen.scss */
+.bizfo div h3 {
+  font-size: 1.5em;
+}
+
+/* line 360, ../sass/screen.scss */
+.address {
+  display: block;
+  text-align: right;
+}
+
+/* MEDIA QUERIES------*/
+@media screen and (max-width: 411px) {
+  /* line 372, ../sass/screen.scss */
+  html {
+    margin: 0 15px;
+  }
+
+  /* line 376, ../sass/screen.scss */
+  body {
+    background-position: center center;
+  }
+
+  /* line 380, ../sass/screen.scss */
+  nav {
+    margin: 0 15px;
+  }
+
+  /* line 384, ../sass/screen.scss */
+  .logo {
+    position: relative;
+    top: -50px;
+    height: auto;
+    width: 80%;
+  }
+
+  /* line 391, ../sass/screen.scss */
+  .welcome {
+    margin-bottom: 10%;
+  }
+
+  /* line 395, ../sass/screen.scss */
+  .info {
+    width: 100%;
+    left: 0;
+  }
+  /* line 398, ../sass/screen.scss */
+  .info h1 {
+    font-size: 2em;
+  }
+  /* line 401, ../sass/screen.scss */
+  .info p {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  /* line 407, ../sass/screen.scss */
+  .kurse {
+    margin-bottom: 20%;
+  }
+
+  /* line 412, ../sass/screen.scss */
+  .df {
+    margin-bottom: 15%;
+  }
+
+  /* line 416, ../sass/screen.scss */
+  footer {
+    bottom: 0;
+  }
+  /* line 418, ../sass/screen.scss */
+  footer .copyright {
+    top: 0;
+  }
+
+  /*----ANMELDE ----*/
+  /* line 424, ../sass/screen.scss */
+  .pedir input, .pedir select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 431, ../sass/screen.scss */
+  .menuTop {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 991px) {
+  /* line 437, ../sass/screen.scss */
+  .info {
+    margin-bottom: 20%;
+  }
+  /* line 439, ../sass/screen.scss */
+  .info p {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  /* line 444, ../sass/screen.scss */
+  body {
+    background-position: center center;
+  }
+
+  /* line 448, ../sass/screen.scss */
+  .info {
+    left: 0;
+    width: 100%;
+  }
+
+  /* line 453, ../sass/screen.scss */
+  .kurse {
+    margin-bottom: 20%;
+  }
+
+  /* line 457, ../sass/screen.scss */
+  .df {
+    margin-bottom: 15%;
+  }
+
+  /* line 461, ../sass/screen.scss */
+  .push {
+    height: 50px;
+  }
+
+  /* line 465, ../sass/screen.scss */
+  footer {
+    bottom: 0;
+  }
+
+  /*----ANMELDE ----*/
+  /* line 470, ../sass/screen.scss */
+  .pedir input, .pedir select {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 477, ../sass/screen.scss */
+  .pedir input, .pedir select {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 1199px) {
+  /* line 483, ../sass/screen.scss */
+  .push {
+    height: 50px;
+  }
+}
